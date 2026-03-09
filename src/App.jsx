@@ -5,9 +5,9 @@ function App() {
    
       <nav style={{background:"#333", padding:"10px"}}>
         <a href="#" style={{color:"white", marginRight:"15px"}}>Home</a>
-        <a href="#" style={{color:"white", marginRight:"15px"}}>Characters</a>
-        <a href="#" style={{color:"white", marginRight:"15px"}}>Story</a>
-        <a href="#" style={{color:"white", marginRight:"15px"}}>Gallery</a>
+        <a href="#" style={{color:"white", marginRight:"15px"}}>Inventory</a>
+        <a href="#" style={{color:"white", marginRight:"15px"}}>sell</a>
+        <a href="#" style={{color:"white", marginRight:"15px"}}>donate</a>
         <a href="#" style={{color:"white"}}>About</a>
       </nav>
 
