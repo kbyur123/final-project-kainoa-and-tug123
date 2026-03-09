@@ -1,22 +1,62 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Food from "./components/Food.jsx";
-import Card from "./components/Card.jsx";
-import AboutMeCard from "./components/AboutMeCard.jsx";
-import InterestCard from "./components/InterestCard.jsx";
-
 function App() {
   return (
     <div>
-      <Header />
-      <main>
-        <h2>Welcome to my website!</h2>
-        <Food />
-      </main>
-      <Footer />
-      <Card />
-      <AboutMeCard />
-      <InterestCard />
+
+   
+      <nav style={{background:"#333", padding:"10px"}}>
+        <a href="#" style={{color:"white", marginRight:"15px"}}>Home</a>
+        <a href="#" style={{color:"white", marginRight:"15px"}}>Characters</a>
+        <a href="#" style={{color:"white", marginRight:"15px"}}>Story</a>
+        <a href="#" style={{color:"white", marginRight:"15px"}}>Gallery</a>
+        <a href="#" style={{color:"white"}}>About</a>
+      </nav>
+
+      
+      <section style={{padding:"20px"}}>
+        <h1>Hello World</h1>
+        <p>This is the starting page for our project.</p>
+      </section>
+
+      
+      <section style={{padding:"20px"}}>
+        <h2>Placeholder Images</h2>
+
+        <img 
+          src="https://placehold.co/250x150" 
+          alt="placeholder"
+        />
+
+        <img 
+          src="https://placehold.co/250x150" 
+          alt="placeholder"
+        />
+      </section>
+
+      
+      <section style={{padding:"20px"}}>
+        <h2>Project Ideas</h2>
+
+        <ul>
+          <li>Main design</li>
+          <li>concept</li>
+          <li>Environment ideas</li>
+          <li>Gameplay stuff</li>
+        </ul>
+      </section>
+
+      
+      <section style={{padding:"20px"}}>
+        <h2>Example Content</h2>
+
+        <p> later with more project details.</p>
+
+        <ol>
+          <li>Intro scene</li>
+          <li>Main challenge</li>
+          <li>Ending idea</li>
+        </ol>
+      </section>
+
     </div>
   );
 }
