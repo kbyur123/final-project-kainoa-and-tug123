@@ -1,25 +1,18 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Profile from "./pages/Profile";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import DonutPage from "./pages/DonutPage";
+import Inventory from "./pages/Inventory";
+import WaterSavedPage from "./pages/WaterSavedPage";
 
 function App() {
   return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
-        <Link to="/profile">Profile</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />} /> {/* ✅ HOME FIRST */}
+      <Route path="/donut" element={<DonutPage />} />
+      <Route path="/inventory" element={<Inventory />} />
+      <Route path="/water" element={<WaterSavedPage />} />
+    </Routes>
   );
 }
 
 export default App;
-
